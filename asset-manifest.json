@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/word-typer/static/css/main.0b9f0133.chunk.css",
+    "main.js": "/word-typer/static/js/main.589c9ba2.chunk.js",
+    "main.js.map": "/word-typer/static/js/main.589c9ba2.chunk.js.map",
+    "runtime-main.js": "/word-typer/static/js/runtime-main.b4f43f6c.js",
+    "runtime-main.js.map": "/word-typer/static/js/runtime-main.b4f43f6c.js.map",
+    "static/js/2.2035edbf.chunk.js": "/word-typer/static/js/2.2035edbf.chunk.js",
+    "static/js/2.2035edbf.chunk.js.map": "/word-typer/static/js/2.2035edbf.chunk.js.map",
+    "index.html": "/word-typer/index.html",
+    "static/css/main.0b9f0133.chunk.css.map": "/word-typer/static/css/main.0b9f0133.chunk.css.map",
+    "static/js/2.2035edbf.chunk.js.LICENSE.txt": "/word-typer/static/js/2.2035edbf.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b4f43f6c.js",
+    "static/js/2.2035edbf.chunk.js",
+    "static/css/main.0b9f0133.chunk.css",
+    "static/js/main.589c9ba2.chunk.js"
+  ]
+}
