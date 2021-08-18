@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+# Word Typer
+
+Speed typing game. Created with React, Bootstrap, CSS
+
+[Live Demo](https://dmitriy24s.github.io/word-typer/) 👈
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
