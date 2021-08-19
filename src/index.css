@@ -13,3 +13,13 @@ body {
 .game-status {
   height: 32px;
 }
+
+.instructions {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.text-success {
+  color: #28a745 !important;
+  /* set lighter green color for text-color than bootstrap provides */
+}
