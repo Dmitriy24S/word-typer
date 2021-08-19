@@ -101,9 +101,11 @@ function App() {
   }, [intervalIDd, time]);
 
   const gameStatusOutput = () => {
-    if (time === 0) return <h3 className='text-danger'>Game Over</h3>;
-    if (gameStatus === "game-start") return <h3 className='text-warning'>Game Started</h3>;
-    if (gameStatus === "correct") return <h3 className='text-success'>Correct</h3>;
+    if (time === 0) return <h3 className="text-danger">Game Over</h3>;
+    if (gameStatus === "game-start")
+      return <h3 className="text-warning">Game Started</h3>;
+    if (gameStatus === "correct")
+      return <h3 className="text-success">Correct</h3>;
     if (value === "") return "";
     else return "";
   };
@@ -113,9 +115,9 @@ function App() {
       <header className="bg-secondary p-3 mb-5">
         <h1>Word Typer</h1>
       </header>
-      <div className="App">
-        <div className="col-6 mx-auto">
-          <p>
+      <div className="App container">
+        <div className="col-md-6 mx-auto">
+          <p className="instructions">
             Type The Given Word Within <span className="text-success">3 </span>
             Seconds:
           </p>
@@ -136,7 +138,7 @@ function App() {
             <h3 className="col-6">Score: {score}</h3>
           </div>
           <div className="col-12 mt-5">
-            <div className="instructions card card-body bg-secondary ">
+            <div className="card card-body bg-secondary">
               <h5>Instructions</h5>
               <p>
                 Type each word in the given amount of seconds to score. To play
