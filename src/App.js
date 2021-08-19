@@ -101,9 +101,9 @@ function App() {
   }, [intervalIDd, time]);
 
   const gameStatusOutput = () => {
-    if (time === 0) return <h3>Game Over</h3>;
-    if (gameStatus === "game-start") return <h3>Game Started</h3>;
-    if (gameStatus === "correct") return <h3>Correct</h3>;
+    if (time === 0) return <h3 className='text-danger'>Game Over</h3>;
+    if (gameStatus === "game-start") return <h3 className='text-warning'>Game Started</h3>;
+    if (gameStatus === "correct") return <h3 className='text-success'>Correct</h3>;
     if (value === "") return "";
     else return "";
   };

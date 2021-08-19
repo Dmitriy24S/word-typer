@@ -10,11 +10,6 @@ body {
   min-height: 100vh;
 }
 
-nav {
-  padding: 25px 0 25px 0;
-  margin-bottom: 50px;
-}
-
 .game-status {
   height: 32px;
 }
