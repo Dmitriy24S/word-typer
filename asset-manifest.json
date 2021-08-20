@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/word-typer/static/css/main.457b783e.chunk.css",
-    "main.js": "/word-typer/static/js/main.2680ab95.chunk.js",
-    "main.js.map": "/word-typer/static/js/main.2680ab95.chunk.js.map",
+    "main.css": "/word-typer/static/css/main.3cd19001.chunk.css",
+    "main.js": "/word-typer/static/js/main.b551b9d9.chunk.js",
+    "main.js.map": "/word-typer/static/js/main.b551b9d9.chunk.js.map",
     "runtime-main.js": "/word-typer/static/js/runtime-main.b4f43f6c.js",
     "runtime-main.js.map": "/word-typer/static/js/runtime-main.b4f43f6c.js.map",
     "static/js/2.2035edbf.chunk.js": "/word-typer/static/js/2.2035edbf.chunk.js",
     "static/js/2.2035edbf.chunk.js.map": "/word-typer/static/js/2.2035edbf.chunk.js.map",
     "index.html": "/word-typer/index.html",
-    "static/css/main.457b783e.chunk.css.map": "/word-typer/static/css/main.457b783e.chunk.css.map",
+    "static/css/main.3cd19001.chunk.css.map": "/word-typer/static/css/main.3cd19001.chunk.css.map",
     "static/js/2.2035edbf.chunk.js.LICENSE.txt": "/word-typer/static/js/2.2035edbf.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b4f43f6c.js",
     "static/js/2.2035edbf.chunk.js",
-    "static/css/main.457b783e.chunk.css",
-    "static/js/main.2680ab95.chunk.js"
+    "static/css/main.3cd19001.chunk.css",
+    "static/js/main.b551b9d9.chunk.js"
   ]
 }
