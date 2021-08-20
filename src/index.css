@@ -10,6 +10,15 @@ body {
   min-height: 100vh;
 }
 
+.App {
+  padding: 0 30px;
+}
+
+.container-md {
+  max-width: 1100px !important;
+  /* limit max width */
+}
+
 .game-status {
   height: 32px;
 }
@@ -17,9 +26,14 @@ body {
 .instructions {
   font-size: 1.25rem;
   font-weight: 300;
+  margin-bottom: 20px;
 }
 
 .text-success {
   color: #28a745 !important;
-  /* set lighter green color for text-color than bootstrap provides */
+  /* set lighter green color for text-color than bootstrap */
+}
+
+#current-word {
+  font-size: 5.5rem;
 }

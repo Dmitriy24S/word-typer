@@ -121,7 +121,7 @@ function App() {
       <header className="bg-secondary p-3 mb-5">
         <h1>Word Typer</h1>
       </header>
-      <div className="App container">
+      <div className="App container-md">
         <div className="col-md-6 mx-auto">
           <p className="instructions">
             Type The Given Word Within <span className="text-success">3 </span>
