@@ -4,9 +4,9 @@ function App() {
   const [time, setTime] = useState(3);
   const [score, setScore] = useState(0);
   const [currentWord, setCurrentWord] = useState("");
-  const [intervalIDd, setInterID] = useState();
   const [value, setValue] = useState("");
   const [gameStatus, setGameStatus] = useState("");
+  const [gameStatusMessage, setGameStatusMessage] = useState("");
 
   const handleChange = (e) => {
     setValue(e.target.value);
@@ -79,36 +79,42 @@ function App() {
   }, [play]);
 
   useEffect(() => {
-    let intervalId;
+    let countDownIntervalID;
     if (time > 0) {
-      intervalId = setInterval(() => {
+      countDownIntervalID = setInterval(() => {
         countDown();
-        setInterID(intervalId);
+        setGameStatus("");
       }, 1000);
     }
     if (time === 0) {
-      clearInterval(intervalIDd);
-      clearInterval(intervalId);
+      setGameStatus("game-over");
     }
     return () => {
-      clearInterval(intervalId);
-      clearInterval(intervalIDd);
-      if (time === 0) {
-        clearInterval(intervalIDd);
-        clearInterval(intervalId);
-      }
+      clearInterval(countDownIntervalID);
     };
-  }, [intervalIDd, time]);
+  }, [time]);
 
-  const gameStatusOutput = () => {
-    if (time === 0) return <h3 className="text-danger">Game Over</h3>;
-    if (gameStatus === "game-start")
-      return <h3 className="text-warning">Game Started</h3>;
-    if (gameStatus === "correct")
-      return <h3 className="text-success">Correct</h3>;
-    if (value === "") return "";
-    else return "";
-  };
+  useEffect(() => {
+    let gameStatusIntervalID;
+    if (gameStatus === "correct") {
+      setGameStatusMessage(<h3 className="text-success">Correct</h3>);
+      gameStatusIntervalID = setTimeout(() => {
+        setGameStatusMessage("");
+      }, 1000);
+    }
+    if (gameStatus === "game-start") {
+      setGameStatusMessage(<h3 className="text-warning">Game Started</h3>);
+      gameStatusIntervalID = setTimeout(() => {
+        setGameStatusMessage("");
+      }, 1000);
+    }
+    if (gameStatus === "game-over") {
+      setGameStatusMessage(<h3 className="text-danger">Game Over</h3>);
+    }
+    return () => {
+      clearInterval(gameStatusIntervalID);
+    };
+  }, [gameStatus]);
 
   return (
     <>
@@ -132,7 +138,7 @@ function App() {
             value={value}
             onChange={handleChange}
           />
-          <div className="game-status mt-3">{gameStatusOutput()}</div>
+          <div className="game-status mt-3">{gameStatusMessage}</div>
           <div className="row mt-5">
             <h3 className="col-6">Time Left: {time}</h3>
             <h3 className="col-6">Score: {score}</h3>
