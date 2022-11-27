@@ -1,5 +1,7 @@
 # Word Typer
 
+![Design preview for Word Typer](./design-preview/design-preview.png)
+
 Speed typing game. Created with React, Bootstrap, CSS
 
 [Live Demo](https://dmitriy24s.github.io/word-typer/) 👈
